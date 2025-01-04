@@ -1,0 +1,74 @@
+.loading, .error {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #555;
+}
+.notFound {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff0000;
+    margin-top: 2rem;
+}
+
+.error {
+    color: red;
+}
+.ItemGridC {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.ItemGridC div {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.ItemGridC img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.SearchBar {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.SearchBar input {
+    width: 50%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.loading {
+    text-align: center;
+    color: #007bff;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.error {
+    text-align: center;
+    color: #ff4d4d;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

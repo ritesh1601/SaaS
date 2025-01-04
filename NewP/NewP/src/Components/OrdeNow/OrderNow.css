@@ -1,0 +1,211 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+.OrderNow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.OrderNow-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: fit-content;
+    margin: -5% auto;
+}
+.OrderNow-heading_image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.OrderNow-heading_image img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: scale(0.5) rotateZ(60deg);
+}
+.OrderNow-heading_text{
+    font-family: var(--font-family);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin-left: -25rem;
+}
+.OrderNow-heading_text h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0%;
+    padding: 0%;
+}
+.OrderNow-Cart_bag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1%;
+    padding: 0;
+}
+.OrderNow-Cart_bag img {
+    width: 100%;
+    transform: scale(0.9);
+    margin: 0;
+    padding: 0%;
+    filter: drop-shadow(4px 6px 4px rgba(0, 30, 8, 0.647));
+}
+
+@media screen and (max-width: 1440px) {
+    .OrderNow-heading_image img {
+        transform: scale(0.5) rotateZ(60deg);
+    }
+    .OrderNow-heading_text{
+        margin-left: -23rem;
+    }
+    .OrderNow-heading_text h1 {
+        font-size: 3.2rem;
+        font-weight: 350;
+    }
+    .OrderNow-Cart_bag{
+        margin-top: -6%;
+    }
+    .OrderNow-Cart_bag img {
+        transform: scale(0.8);
+    }
+
+}
+@media screen and (max-width: 1170px){
+    .OrderNow-heading_image img {
+        transform: scale(0.5) rotateZ(60deg);
+    }
+    .OrderNow-heading_text{
+        margin-left: -60%;
+    }
+    .OrderNow-heading_text h1 {
+        font-size: 2.7rem;
+        font-weight: 330;
+    }
+    .OrderNow-Cart_bag{
+        margin-top: -11%;
+    }
+    .OrderNow-Cart_bag img {
+        transform: scale(0.7);
+    }
+    .OrderNow-heading {
+        width: 55%;
+    }
+}
+@media screen and (max-width: 1000px){
+    .OrderNow-heading_image img {
+        transform: scale(0.5) rotateZ(60deg);
+    }
+    .OrderNow-heading_text{
+        margin-left: -60%;
+    }
+    .OrderNow-heading_text h1 {
+        font-size: 2.7rem;
+        font-weight: 300;
+    }
+    .OrderNow-Cart_bag{
+        margin-top: -14%;
+    }
+    .OrderNow-Cart_bag img {
+        transform: scale(0.6);
+    }
+    .OrderNow-heading {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 750px){
+    .OrderNow-heading_image img {
+        transform: scale(0.45) rotateZ(60deg);
+    }
+    .OrderNow-heading_text{
+        margin-left: -60%;
+    }
+    .OrderNow-heading_text h1 {
+        font-size: 2.3rem;
+        font-weight: 300;
+    }
+    .OrderNow-Cart_bag{
+        margin-top: -24%;
+    }
+    .OrderNow-Cart_bag img {
+        transform: scale(0.5);
+    }
+    .OrderNow-heading {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 550px){
+    .OrderNow-heading_image img {
+        transform: scale(0.5) rotateZ(60deg);
+    }
+    .OrderNow-heading_text{
+        margin-left: -50%;
+    }
+    .OrderNow-heading_text h1 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .OrderNow-Cart_bag{
+        margin-top: -25%;
+    }
+    .OrderNow-Cart_bag img {
+        transform: scale(0.5);
+    }
+    .OrderNow-heading {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 460px){
+    .OrderNow-heading_image img {
+        transform: scale(0.7) rotateZ(60deg);
+    }
+    .OrderNow-heading_text{
+        margin-left: -45%;
+    }
+    .OrderNow-heading_text h1 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .OrderNow-Cart_bag{
+        margin-top: -25%;
+    }
+    .OrderNow-Cart_bag img {
+        transform: scale(0.5);
+    }
+    .OrderNow-heading {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .OrderNow-heading_image img {
+        transform: scale(0.7) rotateZ(60deg);
+    }
+    .OrderNow-heading_text{
+        margin-left: -45%;
+    }
+    .OrderNow-heading_text h1 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .OrderNow-Cart_bag{
+        margin-top: -15%;
+    }
+    .OrderNow-Cart_bag img {
+        transform: scale(0.7);
+    }
+    .OrderNow-heading {
+        width: 80%;
+    }
+}
