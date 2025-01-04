@@ -8,7 +8,7 @@ const app = express();
 const port = 9000;
 
 // Middleware
-// app.use(cors());
+app.use(cors());
 // app.use(morgan('dev'));
 
 // Route
