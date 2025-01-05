@@ -23,6 +23,7 @@ import {
   OrderConfirmation,
   Switcher,
   Items,
+  Cart,
 }
 from './Components/index';
 
@@ -99,6 +100,7 @@ const router=createBrowserRouter(
         <OrderNow/>
         {/* <Switcher/> */}
         <Items/>
+        <Cart/>
         <Footer/>
       </div>
     },

@@ -14,3 +14,5 @@ export { default as Switcher} from './switcher/switcher';
 export { default as  Vegies} from './Vegetables/Vegies';
 export { default as  Fruits} from './Fruits/Fruits';
 export { default as Items} from './Items/Items';
+export { default as Sproduct} from './SinglePorduct/Sproduct';
+export { default as Cart} from './Cart/Cart';

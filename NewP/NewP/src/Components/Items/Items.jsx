@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Sproduct} from '../index.js'
 import './items.css';
 
 const Items = () => {
@@ -59,15 +60,11 @@ const Items = () => {
                 />
             </div>
             <div className="ItemGridC">
-                {currentItems.map((item) => (
-                    <div key={item.id}>
-                        <h3>{item.Name || 'No Name'}</h3>
-                        <img
-                            src={item.Image || 'default-image.jpg'}
-                            alt={item.Name || 'No Name'}
-                        />
-                    </div>
-                ))}
+                {
+                    currentItems.map((item) => (
+                        <Sproduct {...item} />
+                    ))
+                }
             </div>
             <div>
                 <button
