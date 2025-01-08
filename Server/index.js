@@ -1,26 +1,36 @@
+require('dotenv').config();
 const express = require('express');
-const fs = require('fs').promises;
 const cors = require('cors');
 const morgan = require('morgan');
-require('dotenv').config();
+
+const { connectMongoDB } = require('./models/database');
+const dataRoutes = require('./routes/dataRoutes');
+const { sendError } = require('./views/errorView');
 
 const app = express();
-const port = 9000;
+const port = process.env.PORT || 9000;
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/mini-Project';
+
+// MongoDB Connection
+(async () => {
+    try {
+        await connectMongoDB(MONGO_URI);
+    } catch (err) {
+        console.error('Failed to connect to MongoDB. Exiting...');
+        process.exit(1);
+    }
+})();
 
 // Middleware
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-// app.use(morgan('dev'));
+app.use(morgan('dev'));
 
-// Route
-app.get('/', async (req, res) => {
-    try {
-        const data = await fs.readFile("./MOCK_DATA (3).json", "utf8");
-        res.json(JSON.parse(data));
-    } catch (err) {
-        console.error("Error reading the file:", err.message);
-        res.status(500).json({ error: "Failed to fetch data" });
-    }
-});
+// Routes
+app.use('/', dataRoutes);
+
+// Error handling middleware
+app.use(sendError);
 
 // Start the server
 app.listen(port, () => {
